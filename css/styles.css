@@ -267,15 +267,19 @@ a.float2:hover+div.label-container1 {
     position: absolute;
     bottom: 0;
     width: 90%;
-    overflow: hidden; /* Mencegah teks keluar dari kontainer */
-    padding: 10px; /* Tambahkan padding untuk memastikan teks tidak terlalu dekat dengan tepi */
+    overflow: hidden;
+    /* Mencegah teks keluar dari kontainer */
+    padding: 10px;
+    /* Tambahkan padding untuk memastikan teks tidak terlalu dekat dengan tepi */
     box-sizing: border-box;
 }
 
 .overlay h6 {
     margin: 0;
-    font-size: 12px; /* Atur ukuran font sesuai keinginan */
-    line-height: 1.5; /* Sesuaikan line-height jika diperlukan */
+    font-size: 12px;
+    /* Atur ukuran font sesuai keinginan */
+    line-height: 1.5;
+    /* Sesuaikan line-height jika diperlukan */
 }
 
 .swiper-container {
