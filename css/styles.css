@@ -352,3 +352,8 @@ a.float2:hover+div.label-container1 {
 .swiper-slide-active .slide-content {
     display: block; /* Tampilkan konten hanya untuk slide aktif */
 }
+
+.small-btn {
+    font-size: 12px;   /* Mengatur ukuran font untuk membuat teks lebih kecil */
+    border-radius: 10px; /* Sesuaikan radius border jika diperlukan */
+}
