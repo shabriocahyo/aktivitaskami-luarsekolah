@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link to Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- <link rel="stylesheet" href="../css/"> -->
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
+
 <body>
-    <section class="content-blank">
-        <div class="container">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../assets/belajarbekerja-img.png" alt="Image 1"></div>
-                    <div class="swiper-slide"><img src="../assets/laptop_img.png" alt="Image 2"></div>
-                    <div class="swiper-slide"><img src="../assets/prakerja-img.png" alt="Image 3"></div>
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
+
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30" loop="true">
+        <div class="swiper-slide">
+            <img src="../assets/act3.png" alt="Temu Raya Prakerja">
         </div>
-    </section>
-    <!-- Link to Swiper's JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts.js"></script>
+        <div class="swiper-slide">
+            <img src="../assets/act1.png" alt="Unity for Charity">
+        </div>
+        <div class="swiper-slide">
+            <img src="../assets/act4.png" alt="Mini Magang">
+        </div>
+        <div class="swiper-slide">
+            <img src="../assets/act5.png" alt="Webinar Prakerja">
+        </div>
+        <div class="swiper-slide">
+            <img src="../assets/act2.png" alt="Sapa Sobat LS">
+        </div>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 </body>
+
 </html>
